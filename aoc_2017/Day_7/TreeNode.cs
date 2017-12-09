@@ -26,7 +26,7 @@ namespace aoc_2017
 
             try
             {
-                //string MyInputString2 = @"navfz (187) -> jviwcde, wfwor, vpfabxa";
+                //string sample = @"navfz (187) -> jviwcde, wfwor, vpfabxa";
                 var match = Regex.Match(line, @"(?<name>.*) \((?<weight>.*)\) -> (?<children>.*$)");
                 if (match.Groups["children"].Length == 0)
                     match = Regex.Match(line, @"(?<name>.*) \((?<weight>.*)\)$");
@@ -37,7 +37,7 @@ namespace aoc_2017
                 Weight = int.Parse(match.Groups["weight"].ToString());
                 Sum = 0;
             }
-            catch (Exception ex)
+            catch (Exception /*ex*/)
             {
                 //Add appropriate error handling here
                 throw;

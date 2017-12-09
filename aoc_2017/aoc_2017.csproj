@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Day8\Condition.cs" />
+    <Compile Include="Day8\Instruction.cs" />
+    <Compile Include="Day8\Register.cs" />
+    <Compile Include="Day8\Registers.cs" />
     <Compile Include="Day_0_First.cs" />
     <Compile Include="Day_0_Second.cs" />
     <Compile Include="Day_1_First.cs" />
@@ -56,6 +60,7 @@
     <Compile Include="Day_6.cs" />
     <Compile Include="Day_7.cs" />
     <Compile Include="Day_7\TreeNode.cs" />
+    <Compile Include="Day_8.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -67,7 +72,13 @@
     <None Include="data\Day_6_input.aoc" />
     <None Include="data\Day_7_input.aoc" />
     <None Include="data\Day_7_test.aoc" />
+    <None Include="data\Day_8_input.aoc" />
+    <None Include="data\Day_8_test.aoc" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Day_6\TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
