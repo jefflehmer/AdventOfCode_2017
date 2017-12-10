@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace aoc_2017
 {
-    class Day_1_First
+    class Day_01_First
     {
         public static void Do(/*string[] args*/)
         {
@@ -29,7 +29,7 @@ namespace aoc_2017
                 {
                     total += (seqCount * prev);
                     if (seqCount > 0)
-                        Console.WriteLine($"{prev} * {seqCount} = {prev * seqCount} => {total}");
+                        //Console.WriteLine($"{prev} * {seqCount} = {prev * seqCount} => {total}");
                     seqCount = 0;
                     prev = nums[i];
                 }
@@ -41,14 +41,11 @@ namespace aoc_2017
             }
 
             total += seqCount * prev;
-            Console.Write($"Output: {total}");
-            Console.WriteLine("\r\n");
             var total2 = 0;
             for (int j = 0; j < 10; j++)
-            {
                 total2 += j * instances[j];
-            }
-            Console.Write($"Output2: {total2}");
+
+            Console.Write($"Day 01.1: Output: {total} Output2: {total2}");
             Console.ReadLine();
         }
     }

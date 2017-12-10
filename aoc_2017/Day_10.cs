@@ -12,7 +12,7 @@ namespace aoc_2017
         {
 
 
-            Console.Write($"This stuff: {0}");
+            Console.Write($"Day 10: product: {0}");
             Console.ReadLine();
         }
     }

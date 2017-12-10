@@ -43,26 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Day8\Condition.cs" />
-    <Compile Include="Day8\Instruction.cs" />
-    <Compile Include="Day8\Register.cs" />
-    <Compile Include="Day8\Registers.cs" />
-    <Compile Include="Day_0_First.cs" />
-    <Compile Include="Day_0_Second.cs" />
+    <Compile Include="Day08\Condition.cs" />
+    <Compile Include="Day08\Instruction.cs" />
+    <Compile Include="Day08\Register.cs" />
+    <Compile Include="Day08\Registers.cs" />
     <Compile Include="Day_10.cs" />
-    <Compile Include="Day_1_First.cs" />
-    <Compile Include="Day_1_Second.cs" />
-    <Compile Include="Day_2_First.cs" />
-    <Compile Include="Day_3_First.cs" />
-    <Compile Include="Day_3\Manhattan.cs" />
-    <Compile Include="Day_4_First.cs" />
-    <Compile Include="Day_5_First.cs" />
-    <Compile Include="Day_6\Blocks.cs" />
-    <Compile Include="Day_6.cs" />
-    <Compile Include="Day_7.cs" />
-    <Compile Include="Day_7\TreeNode.cs" />
-    <Compile Include="Day_8.cs" />
-    <Compile Include="Day_9.cs" />
+    <Compile Include="Day_01_First.cs" />
+    <Compile Include="Day_01_Second.cs" />
+    <Compile Include="Day_02_First.cs" />
+    <Compile Include="Day_03_First.cs" />
+    <Compile Include="Day_03\Manhattan.cs" />
+    <Compile Include="Day_04_First.cs" />
+    <Compile Include="Day_05_First.cs" />
+    <Compile Include="Day_06\Blocks.cs" />
+    <Compile Include="Day_06.cs" />
+    <Compile Include="Day_07.cs" />
+    <Compile Include="Day_07\TreeNode.cs" />
+    <Compile Include="Day_08.cs" />
+    <Compile Include="Day_09.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,23 +68,22 @@
     <None Include="App.config" />
     <None Include="data\Day_10_input.aoc" />
     <None Include="data\Day_10_test.aoc" />
-    <None Include="data\Day_2_First_test_1.aoc" />
-    <None Include="data\Day_4_First_test_1.aoc" />
-    <None Include="data\Day_5_input.aoc" />
-    <None Include="data\Day_6_input.aoc" />
-    <None Include="data\Day_7_input.aoc" />
-    <None Include="data\Day_7_test.aoc" />
-    <None Include="data\Day_8_input.aoc" />
-    <None Include="data\Day_8_test.aoc" />
-    <None Include="data\Day_9_input.aoc" />
-    <None Include="data\Day_9_test.aoc" />
+    <None Include="data\Day_02_First_test_1.aoc" />
+    <None Include="data\Day_04_First_test_1.aoc" />
+    <None Include="data\Day_05_input.aoc" />
+    <None Include="data\Day_06_input.aoc" />
+    <None Include="data\Day_07_input.aoc" />
+    <None Include="data\Day_07_test.aoc" />
+    <None Include="data\Day_08_input.aoc" />
+    <None Include="data\Day_08_test.aoc" />
+    <None Include="data\Day_09_input.aoc" />
+    <None Include="data\Day_09_test.aoc" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Day_6\TextFile1.txt" />
+    <Content Include="Day_06\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Day10\" />
-    <Folder Include="Day9\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

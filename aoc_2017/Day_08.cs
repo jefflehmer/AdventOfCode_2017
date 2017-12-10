@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using aoc_2017.Day8;
+using aoc_2017.Day08;
 
 namespace aoc_2017
 {
-    public class Day_8
+    public class Day_08
     {
         public static void Do(string srcFile)
         {
@@ -33,7 +33,7 @@ namespace aoc_2017
 
             var largest = registers.FindLargest();
 
-            Console.Write($"Largest Final Value: {largest.Value}  Highest Value: {highest}");
+            Console.Write($"Day 08: Largest Final Value: {largest.Value}  Highest Value: {highest}");
             Console.ReadLine();
         }
     }

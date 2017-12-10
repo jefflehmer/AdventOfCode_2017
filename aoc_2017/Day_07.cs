@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace aoc_2017
 {
-    public class Day_7
+    public class Day_07
     {
         public static void Do(string srcFile)
         {
@@ -21,7 +21,7 @@ namespace aoc_2017
             var rootSum = treeRoot.CalculateSum();
             var badNode = treeRoot.FindUnbalancedNode(allNodes);
             var correctedWeight = treeRoot.DetermineCorrectedWeight(badNode);
-            Console.Write($"TreeRoot Name: {treeRoot.Name}  Unbalanced Node: {badNode.Name}  CorrectedWeight: {correctedWeight}");
+            Console.Write($"Day 07: TreeRoot Name: {treeRoot.Name}  Unbalanced Node: {badNode.Name}  CorrectedWeight: {correctedWeight}");
             Console.ReadLine();
         }
     }

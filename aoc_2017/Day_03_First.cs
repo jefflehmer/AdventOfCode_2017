@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using aoc_2017.Day_3;
+using aoc_2017.Day_03;
 
 namespace aoc_2017
 {
-    public class Day_3_First
+    public class Day_03_First
     {
         public static void Do(int steps)
         {
-            var square = new Day_3_First();
+            var square = new Day_03_First();
             square.Dance(steps);
         }
 
@@ -20,7 +20,7 @@ namespace aoc_2017
             var blocks = new Manhattan(steps);
             blocks.Walk(steps);
 
-            Console.Write($"Steps: {steps}  Distance {blocks.CalculateDistance()}");
+            Console.Write($"Day 03: Steps: {steps}  Distance {blocks.CalculateDistance()}");
             Console.ReadLine();
         }
     }

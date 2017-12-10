@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace aoc_2017.Day8
+namespace aoc_2017.Day08
 {
     public class Instruction
     {

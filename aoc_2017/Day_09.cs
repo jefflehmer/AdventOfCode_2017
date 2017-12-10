@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace aoc_2017
 {
-    public class Day_9
+    public class Day_09
     {
         public static void Do(string srcFile)
         {
@@ -105,7 +105,7 @@ namespace aoc_2017
                 sr?.Close();
             }
 
-            Console.Write($"numGroups: {numGroups} Total Score: {totalScore}  Amount of Garbage: {garbageCount}");
+            Console.Write($"Day 09: numGroups: {numGroups} Total Score: {totalScore}  Amount of Garbage: {garbageCount}");
             Console.ReadLine();
         }
     }

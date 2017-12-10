@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace aoc_01
 {
-    class Day_5_First
+    class Day_05_First
     {
         public static void Do(string srcFile)
         {
@@ -16,7 +16,7 @@ namespace aoc_01
             var steps = FindTheExit1(offsets);
             //var steps = FindTheExit2(offsets);
 
-            Console.Write($"Offsets: {offsets.Count}  Steps to exit: {steps}");
+            Console.Write($"Day 05: Offsets: {offsets.Count}  Steps to exit: {steps}");
             Console.ReadLine();
         }
 

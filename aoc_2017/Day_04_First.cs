@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace aoc_2017
 {
-    class Day_4_First
+    class Day_04_First
     {
         public static void Do(string srcFile)
         {
@@ -14,7 +14,7 @@ namespace aoc_2017
             var count1 = lines.Sum(line => IsValidPassphrase1(line) ? 1 : 0);
             var count2 = lines.Sum(line => IsValidPassphrase2(line) ? 1 : 0);
 
-            Console.Write($"Valid passphrases count1: {count1}  count2: {count2}");
+            Console.Write($"Day 04: Valid passphrases count1: {count1}  count2: {count2}");
             Console.ReadLine();
         }
 

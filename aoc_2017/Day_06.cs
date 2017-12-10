@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace aoc_2017
 {
-    public class Day_6
+    public class Day_06
     {
         public static void Do(string srcFile)
         {
@@ -25,7 +25,7 @@ namespace aoc_2017
             } while (blocks.HasNotBeenSeenBefore(numCycles));
 
 
-            Console.Write($"Starting Blocks: {blocks.Count}  Cycles: {numCycles}  Loop: {numCycles - blocks.CycleIdx}");
+            Console.Write($"Day 06: Starting Blocks: {blocks.Count}  Cycles: {numCycles}  Loop: {numCycles - blocks.CycleIdx}");
             Console.ReadLine();
         }
     }

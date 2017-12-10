@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace aoc_2017
 {
-    class Day_2_First
+    class Day_02_First
     {
         public static void Do(string srcFile)
         {
@@ -39,7 +39,7 @@ namespace aoc_2017
                 sr?.Close();
             }
 
-            Console.Write($"Lines: {idx}  Checksum: {vals.Aggregate((a, b) => b + a)}");
+            Console.Write($"Day 02: Lines: {idx}  Checksum: {vals.Aggregate((a, b) => b + a)}");
             Console.ReadLine();
         }
 
@@ -56,7 +56,7 @@ namespace aoc_2017
                     var mod = nums[hiyer] % nums[lower];
                     if (mod == 0)
                     {
-                        Console.WriteLine($"{nums[hiyer]} % {nums[lower]} => {nums[hiyer] / nums[lower]}");
+                        //Console.WriteLine($"{nums[hiyer]} % {nums[lower]} => {nums[hiyer] / nums[lower]}");
                         return nums[hiyer] / nums[lower];
                     }
                 }
