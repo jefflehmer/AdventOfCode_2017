@@ -21,8 +21,9 @@ namespace aoc_2017
             //Day_07.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_07_input.aoc");
             //Day_08.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_08_input.aoc");
             //Day_09.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_09_input.aoc");
-            Day_10.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_10_test.aoc");
-            //Day_10.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_10_input.aoc");
+            //Day_10.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_10_test.aoc");
+            Day_10_1.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_10_input.aoc");
+            Day_10_2.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_10_input.aoc");
         }
     }
 }

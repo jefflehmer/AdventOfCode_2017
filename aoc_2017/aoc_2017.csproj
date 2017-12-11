@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,7 +51,8 @@
     <Compile Include="Day08\Instruction.cs" />
     <Compile Include="Day08\Register.cs" />
     <Compile Include="Day08\Registers.cs" />
-    <Compile Include="Day_10.cs" />
+    <Compile Include="Day10\Knot.cs" />
+    <Compile Include="Day_10_1.cs" />
     <Compile Include="Day_01_First.cs" />
     <Compile Include="Day_01_Second.cs" />
     <Compile Include="Day_02_First.cs" />
@@ -61,6 +66,7 @@
     <Compile Include="Day_07\TreeNode.cs" />
     <Compile Include="Day_08.cs" />
     <Compile Include="Day_09.cs" />
+    <Compile Include="Day_10_2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -82,9 +88,7 @@
   <ItemGroup>
     <Content Include="Day_06\TextFile1.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Day10\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
