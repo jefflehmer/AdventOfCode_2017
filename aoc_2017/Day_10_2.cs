@@ -12,9 +12,11 @@ namespace aoc_2017
         public static void Do(string srcFile)
         {
             var lines = System.IO.File.ReadAllLines(srcFile);
-            var StdSuffix = new byte[] { 7, 1, 3, 7, 3 };
             var bytes = Encoding.ASCII.GetBytes(lines[0]).ToList();
-            bytes.AddRange(StdSuffix);
+
+            var stdSuffix = new byte[] { 7, 1, 3, 7, 3 };
+            bytes.AddRange(stdSuffix);
+
             var lengths = bytes.Select(bit => (int)bit);
 
             var NumRounds = 64;

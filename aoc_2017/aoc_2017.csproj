@@ -86,6 +86,7 @@
     <None Include="data\Day_08_test.aoc" />
     <None Include="data\Day_09_input.aoc" />
     <None Include="data\Day_09_test.aoc" />
+    <None Include="data\Day_10_test_2.aoc" />
     <None Include="data\Day_11_input.aoc" />
     <None Include="data\Day_11_test.aoc" />
   </ItemGroup>
