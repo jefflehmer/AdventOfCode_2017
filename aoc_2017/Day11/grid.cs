@@ -22,12 +22,15 @@ namespace aoc_2017.Day11
 
         private Hex Origin { get; set; }
         private Hex Current { get; set; }
+        public int Furthest { get; set; }
 
         public Grid()
         {
             // fill with the origin
-            Current = Origin = new Hex() { Q = 0, R = 0 };
+            Origin = new Hex() { Q = 0, R = 0 };
+            Current = new Hex() { Q = 0, R = 0 };
             //Hexes = new HashSet<Hex> { Origin };
+            Furthest = 0;
         }
 
         public void Step(Direction direction)
@@ -65,19 +68,24 @@ namespace aoc_2017.Day11
                     throw new Exception("Unsupported step direction!");
             }
 
-            Current = Current.Step(q, r);
+            /*Current = */Current.Step(q, r);
             //Hexes.Add(Current);
+            var distance = DistanceToOrigin();
+            if (Furthest < distance)
+                Furthest = distance;
         }
 
         // returns the distance between the origin and the current hex
         // axial hex distance is derived from the Manhattan distance on cubes
-        public int OriginToCurrent()
+        public int DistanceToOrigin()
         {
             var a = Origin;
             var b = Current;
-            return (Math.Abs(a.Q - b.Q)
-                  + Math.Abs(a.Q = a.R - b.Q - b.R)
-                  + Math.Abs(a.R - b.R)) / 2;
+            var distance = (Math.Abs(a.Q - b.Q)
+                          + Math.Abs(a.Q + a.R - b.Q - b.R)
+                          + Math.Abs(a.R - b.R)) / 2;
+
+            return distance;
         }
     }
 }

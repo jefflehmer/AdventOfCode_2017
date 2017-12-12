@@ -20,9 +20,11 @@ namespace aoc_2017.Day11
         }
 */
 
-        internal Hex Step(int q, int r)
+        internal /*Hex*/void Step(int q, int r)
         {
-            return new Hex() {Q = this.Q + q, R = this.R + r};
+            Q += q;
+            R += r;
+            //return new Hex() {Q = this.Q + q, R = this.R + r};
         }
     }
 }

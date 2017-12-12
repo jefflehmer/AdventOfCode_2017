@@ -18,7 +18,7 @@ namespace aoc_2017
             foreach (var step in steps)
                 grid.Step((Grid.Direction)Enum.Parse(typeof(Grid.Direction), step.ToUpper()));
 
-            Console.Write($"Day 11.1: Fewest Steps: {grid.OriginToCurrent()}");
+            Console.Write($"Day 11: Fewest Steps: {grid.DistanceToOrigin()}  Furthest Hex: {grid.Furthest}");
             Console.ReadLine();
         }
     }
