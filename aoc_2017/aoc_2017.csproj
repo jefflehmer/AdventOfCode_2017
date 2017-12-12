@@ -33,8 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>aoc_2017.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -52,6 +51,8 @@
     <Compile Include="Day08\Register.cs" />
     <Compile Include="Day08\Registers.cs" />
     <Compile Include="Day10\Knot.cs" />
+    <Compile Include="Day11\Grid.cs" />
+    <Compile Include="Day11\Hex.cs" />
     <Compile Include="Day_10_1.cs" />
     <Compile Include="Day_01_First.cs" />
     <Compile Include="Day_01_Second.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Day_08.cs" />
     <Compile Include="Day_09.cs" />
     <Compile Include="Day_10_2.cs" />
+    <Compile Include="Day_11.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -84,6 +86,8 @@
     <None Include="data\Day_08_test.aoc" />
     <None Include="data\Day_09_input.aoc" />
     <None Include="data\Day_09_test.aoc" />
+    <None Include="data\Day_11_input.aoc" />
+    <None Include="data\Day_11_test.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day_06\TextFile1.txt" />
