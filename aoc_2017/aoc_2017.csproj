@@ -62,7 +62,7 @@
     <Compile Include="Day04\Day_04_First.cs" />
     <Compile Include="Day05\Day_05_First.cs" />
     <Compile Include="Day12\GraphNode.cs" />
-    <Compile Include="Day_06\Blocks.cs" />
+    <Compile Include="Day06\Blocks.cs" />
     <Compile Include="Day06\Day_06.cs" />
     <Compile Include="Day07\Day_07.cs" />
     <Compile Include="Day07\TreeNode.cs" />
@@ -95,7 +95,7 @@
     <None Include="Day12\Day_12_test.aoc" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Day_06\TextFile1.txt" />
+    <Content Include="Day06\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />
