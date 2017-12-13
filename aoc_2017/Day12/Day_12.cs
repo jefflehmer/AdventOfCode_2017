@@ -31,7 +31,7 @@ namespace aoc_2017.Day12
                 if (node.Value.Visited == false)
                 {
                     groups++;
-                    GraphNode.VisitConnectedNodes(node.Value);
+                    GraphNode.VisitConnectedNodes(node.Value); // mark the nodes connected to this one
                 }
             }
 

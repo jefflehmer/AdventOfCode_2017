@@ -23,6 +23,7 @@ namespace aoc_2017.Day12
             Visited = false;
         }
 
+        // use a little recursion to traverse the nodes...marking them as "visited"
         public static int VisitConnectedNodes(GraphNode graphNode)
         {
             if (graphNode.Visited)

@@ -76,28 +76,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="data\Day_10_input.aoc" />
-    <None Include="data\Day_10_test.aoc" />
-    <None Include="data\Day_02_First_test_1.aoc" />
-    <None Include="data\Day_04_First_test_1.aoc" />
-    <None Include="data\Day_05_input.aoc" />
-    <None Include="data\Day_06_input.aoc" />
-    <None Include="data\Day_07_input.aoc" />
-    <None Include="data\Day_07_test.aoc" />
-    <None Include="data\Day_08_input.aoc" />
-    <None Include="data\Day_08_test.aoc" />
-    <None Include="data\Day_09_input.aoc" />
-    <None Include="data\Day_09_test.aoc" />
-    <None Include="data\Day_10_test_2.aoc" />
-    <None Include="data\Day_11_input.aoc" />
-    <None Include="data\Day_11_test.aoc" />
-    <None Include="data\Day_12_input.aoc" />
-    <None Include="data\Day_12_test.aoc" />
+    <None Include="Day10\Day_10_input.aoc" />
+    <None Include="Day10\Day_10_test.aoc" />
+    <None Include="Day02\Day_02_First_test_1.aoc" />
+    <None Include="Day04\Day_04_First_test_1.aoc" />
+    <None Include="Day05\Day_05_input.aoc" />
+    <None Include="Day06\Day_06_input.aoc" />
+    <None Include="Day07\Day_07_input.aoc" />
+    <None Include="Day07\Day_07_test.aoc" />
+    <None Include="Day08\Day_08_input.aoc" />
+    <None Include="Day08\Day_08_test.aoc" />
+    <None Include="Day09\Day_09_input.aoc" />
+    <None Include="Day09\Day_09_test.aoc" />
+    <None Include="Day10\Day_10_test_2.aoc" />
+    <None Include="Day11\Day_11_input.aoc" />
+    <None Include="Day11\Day_11_test.aoc" />
+    <None Include="Day12\Day_12_input.aoc" />
+    <None Include="Day12\Day_12_test.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day_06\TextFile1.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="data\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
