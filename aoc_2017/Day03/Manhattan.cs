@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace aoc_2017.Day_03
+namespace aoc_2017.Day03
 {
     class Manhattan
     {

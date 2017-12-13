@@ -68,7 +68,7 @@ namespace aoc_2017.Day10
 
             var dense = new StringBuilder(32);
             foreach (var d in idense)
-                dense.Append(d.ToString("X2"));
+                dense.Append(d.ToString("x2"));
 
             return dense.ToString();
         }

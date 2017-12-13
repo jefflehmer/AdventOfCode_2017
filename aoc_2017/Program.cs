@@ -3,7 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using aoc_01;
+using aoc_2017.Day01;
+using aoc_2017.Day02;
+using aoc_2017.Day03;
+using aoc_2017.Day04;
+using aoc_2017.Day05;
+using aoc_2017.Day06;
+using aoc_2017.Day07;
+using aoc_2017.Day08;
+using aoc_2017.Day09;
+using aoc_2017.Day10;
+using aoc_2017.Day11;
+using aoc_2017.Day12;
 
 namespace aoc_2017
 {
@@ -21,12 +32,13 @@ namespace aoc_2017
             //Day_07.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_07_input.aoc");
             //Day_08.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_08_input.aoc");
             //Day_09.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_09_input.aoc");
-            //Day_10.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_10_test.aoc");
             //Day_10_1.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_10_input.aoc");
-            Day_10_2.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_10_test_2.aoc");
+            //Day_10_2.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_10_test_2.aoc");
             //Day_10_2.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_10_input.aoc");
             //Day_11.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_11_test.aoc");
             //Day_11.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_11_input.aoc");
+            Day_12.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_12_test.aoc");
+            //Day_12.Do(@"C:\github\AdventOfCode_2017\aoc_2017\data\Day_12_input.aoc");
         }
     }
 }

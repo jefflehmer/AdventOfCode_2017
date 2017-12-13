@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using aoc_2017.Day08;
 
-namespace aoc_2017
+namespace aoc_2017.Day08
 {
     public class Day_08
     {

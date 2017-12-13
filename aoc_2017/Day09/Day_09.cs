@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace aoc_2017
+namespace aoc_2017.Day09
 {
     public class Day_09
     {

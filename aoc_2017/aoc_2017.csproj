@@ -53,22 +53,23 @@
     <Compile Include="Day10\Knot.cs" />
     <Compile Include="Day11\Grid.cs" />
     <Compile Include="Day11\Hex.cs" />
-    <Compile Include="Day_10_1.cs" />
-    <Compile Include="Day_01_First.cs" />
-    <Compile Include="Day_01_Second.cs" />
-    <Compile Include="Day_02_First.cs" />
-    <Compile Include="Day_03_First.cs" />
-    <Compile Include="Day_03\Manhattan.cs" />
-    <Compile Include="Day_04_First.cs" />
-    <Compile Include="Day_05_First.cs" />
+    <Compile Include="Day10\Day_10_1.cs" />
+    <Compile Include="Day01\Day_01_First.cs" />
+    <Compile Include="Day01\Day_01_Second.cs" />
+    <Compile Include="Day02\Day_02_First.cs" />
+    <Compile Include="Day03\Day_03_First.cs" />
+    <Compile Include="Day03\Manhattan.cs" />
+    <Compile Include="Day04\Day_04_First.cs" />
+    <Compile Include="Day05\Day_05_First.cs" />
     <Compile Include="Day_06\Blocks.cs" />
-    <Compile Include="Day_06.cs" />
-    <Compile Include="Day_07.cs" />
-    <Compile Include="Day_07\TreeNode.cs" />
-    <Compile Include="Day_08.cs" />
-    <Compile Include="Day_09.cs" />
-    <Compile Include="Day_10_2.cs" />
-    <Compile Include="Day_11.cs" />
+    <Compile Include="Day06\Day_06.cs" />
+    <Compile Include="Day07\Day_07.cs" />
+    <Compile Include="Day07\TreeNode.cs" />
+    <Compile Include="Day08\Day_08.cs" />
+    <Compile Include="Day09\Day_09.cs" />
+    <Compile Include="Day10\Day_10_2.cs" />
+    <Compile Include="Day11\Day_11.cs" />
+    <Compile Include="Day12\Day_12.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -89,6 +90,8 @@
     <None Include="data\Day_10_test_2.aoc" />
     <None Include="data\Day_11_input.aoc" />
     <None Include="data\Day_11_test.aoc" />
+    <None Include="data\Day_12_input.aoc" />
+    <None Include="data\Day_12_test.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day_06\TextFile1.txt" />

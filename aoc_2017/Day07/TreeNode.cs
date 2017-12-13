@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace aoc_2017
+namespace aoc_2017.Day07
 {
     public class TreeNode
     {
