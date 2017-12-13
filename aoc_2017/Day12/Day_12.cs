@@ -12,11 +12,31 @@ namespace aoc_2017.Day12
     {
         public static void Do(string srcFile)
         {
-            var lines = System.IO.File.ReadAllLines(srcFile);
-            var pipes = lines[0].Split(',').ToList();
+            var pipes = System.IO.File.ReadAllLines(srcFile);
+            var nodes = pipes.Select(GraphNode.Parse).ToDictionary(node => node.Index);
+
+            foreach (var node in nodes)
+            {
+                foreach (var path in node.Value.Paths)
+                    node.Value.Nodes.Add(nodes[path]);
+            }
+
+            const int programID = 0;
+            var connections = GraphNode.VisitConnectedNodes(nodes[programID]); // marks nodes as "visited"
+
+            // how many nodes have not been visited yet?
+            var groups = 1;  // 1 group already visited
+            foreach (var node in nodes)
+            {
+                if (node.Value.Visited == false)
+                {
+                    groups++;
+                    GraphNode.VisitConnectedNodes(node.Value);
+                }
+            }
 
 
-            Console.Write($"Day 12: Number of Programs connected to 0: {0}");
+            Console.Write($"Day 12: Node 0 connections: {connections}  Number of Groups: {groups}");
             Console.ReadLine();
         }
     }

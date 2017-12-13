@@ -61,6 +61,7 @@
     <Compile Include="Day03\Manhattan.cs" />
     <Compile Include="Day04\Day_04_First.cs" />
     <Compile Include="Day05\Day_05_First.cs" />
+    <Compile Include="Day12\GraphNode.cs" />
     <Compile Include="Day_06\Blocks.cs" />
     <Compile Include="Day06\Day_06.cs" />
     <Compile Include="Day07\Day_07.cs" />
