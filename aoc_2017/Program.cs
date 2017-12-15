@@ -15,6 +15,7 @@ using aoc_2017.Day09;
 using aoc_2017.Day10;
 using aoc_2017.Day11;
 using aoc_2017.Day12;
+using aoc_2017.Day13;
 
 namespace aoc_2017
 {
@@ -36,10 +37,10 @@ namespace aoc_2017
             Day_10_1.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day10\Day_10_input.aoc");
             Day_10_2.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day10\Day_10_input.aoc");
             Day_11.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day11\Day_11_input.aoc");
-            Day_12.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day12\Day_12_test.aoc");
             Day_12.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day12\Day_12_input.aoc");
+            Day_13.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day13\Day_13_input.aoc");
 */
-            Day_12.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day12\Day_12_input.aoc");
+            Day_13.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day13\Day_13_input.aoc");
         }
     }
 }

@@ -71,6 +71,11 @@
     <Compile Include="Day10\Day_10_2.cs" />
     <Compile Include="Day11\Day_11.cs" />
     <Compile Include="Day12\Day_12.cs" />
+    <Compile Include="Day13\Day_13.cs" />
+    <Compile Include="Day13\ExtensionMethods.cs" />
+    <Compile Include="Day13\Firewall.cs" />
+    <Compile Include="Day13\Layer.cs" />
+    <Compile Include="Day13\Packet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -93,9 +98,12 @@
     <None Include="Day11\Day_11_test.aoc" />
     <None Include="Day12\Day_12_input.aoc" />
     <None Include="Day12\Day_12_test.aoc" />
+    <None Include="Day13\Day_13_input.aoc" />
+    <None Include="Day13\Day_13_test.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day06\TextFile1.txt" />
+    <Content Include="Day13\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />

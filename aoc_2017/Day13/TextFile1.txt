@@ -1,0 +1,22 @@
+﻿This problem involves the Chinese Remainder Theorem.  Two comments about this in Reddit.  Here's one...
+
+The design of the solution is to find a set of consecutive primes that sum to a minimal number and multiply 
+to be larger than the answer, and then to leverage the Chinese Remainder Theorem to ensure that the only 
+valid answer modulo their product is the input. By AM-GM, if we fix the product of the primes, we want the 
+primes to be adjacent to minimize their sum.
+
+Chinese remainder theorem
+
+The Chinese remainder theorem is a theorem of number theory, which states that if one knows the remainders of the Euclidean division of an integer n by several integers, then one can determine uniquely the remainder of the division of n by the product of these integers, under the condition that the divisors are pairwise coprime.
+
+The theorem was first discovered in the 3rd century AD by the Chinese mathematician Sunzi in Sunzi Suanjing.
+
+The Chinese remainder theorem is widely used for computing with large integers, as it allows replacing a computation for which one knows a bound on the size of the result by several similar computations on small integers.
+
+The Chinese remainder theorem (expressed in terms of congruences) is true over every principal ideal domain.
+
+
+from kevinpp123 (only 3 lines in c#)
+List<List<int>> day13LUT = File.ReadAllLines(srcFile).Select(l => l.Replace(" ", "").Split(':').Select(t => int.Parse(t)).ToList()).ToList();
+Console.WriteLine("Severity: " + day13LUT.Sum(s => (s[0] % (s[1] * 2 - 2) == 0 ? (s[0] * s[1]) : 0)));
+Console.WriteLine("Delay Required = " + Enumerable.Range(0, int.MaxValue).First(d => day13LUT.Sum(s => ((s[0] + d) % (s[1] * 2 - 2) == 0 ? 1 : 0)) == 0));
