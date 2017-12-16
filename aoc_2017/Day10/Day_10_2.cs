@@ -13,7 +13,7 @@ namespace aoc_2017.Day10
             var lines = System.IO.File.ReadAllLines(srcFile);
             var bytes = Encoding.ASCII.GetBytes(lines[0]).ToList();
 
-            var stdSuffix = new byte[] { 7, 1, 3, 7, 3 };
+            var stdSuffix = new byte[] { 17, 31, 73, 47, 23 };
             bytes.AddRange(stdSuffix);
 
             var lengths = bytes.Select(bit => (int)bit);

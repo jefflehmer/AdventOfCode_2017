@@ -23,7 +23,7 @@ namespace aoc_2017
     {
         static void Main(string[] args)
         {
-/*
+            /*
             Day_01_First.Do();
             Day_01_Second.Do();
             Day_02_First.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day02\Day_02_First_test_1.aoc");
@@ -39,8 +39,8 @@ namespace aoc_2017
             Day_11.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day11\Day_11_input.aoc");
             Day_12.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day12\Day_12_input.aoc");
             Day_13.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day13\Day_13_input.aoc");
-*/
-            Day_13.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day13\Day_13_input.aoc");
+            */
+            Day_10_2.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day10\Day_10_input.aoc");
         }
     }
 }

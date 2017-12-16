@@ -49,22 +49,28 @@ namespace aoc_2017.Day10
 
         public string DenseHash()
         {
-            var left = new byte[16];
-            var right = new byte[16];
+            var loose = new byte[16];
+            var result = new byte[16];
             var idense = new List<int>(16);
 
-            for (var i = 0; i < 16; i++) left[i] = Convert.ToByte((char)SparseHash[i]); // init "left"
-            for (var i = 1; i < 16; i++) // then run through the rest of the words and xor them to "left"
+            // run through all 16 blocks of 16 numbers and condense each block
+            for (var block = 0; block < 16; block++)
             {
-                for (var j = 0; j < 16; j++)
-                    right[j] = Convert.ToByte((char)SparseHash[i * 16 + j]); // init "right"
+                // grab the next chunk of 16 bytes
+                for (var i = 0; i < 16; i++)
+                    loose[i] = Convert.ToByte((char)SparseHash[block * 16 + i]); // init "loose"
 
-                for (var j = 0; j < 16; j++)
-                    left[j] = (byte)(left[j] ^ right[j]);
+                // condense those bytes down to one byte
+                byte bite = loose[0];
+                for (var j = 1; j < 16; j++)
+                    bite ^= loose[j]; // xor
+
+                // add that byte to the final hash
+                result[block] = bite;
             }
 
             for (var j = 0; j < 16; j++)
-                idense.Add(Convert.ToInt32(left[j]));
+                idense.Add(Convert.ToInt32(result[j]));
 
             var dense = new StringBuilder(32);
             foreach (var d in idense)
