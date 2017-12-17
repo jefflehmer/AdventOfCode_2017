@@ -24,13 +24,21 @@ namespace aoc_2017.Day14
             // convert strings to bytes then search the stream of 1s and 0s to count the number of 1s
             foreach (var row in GridRows)
             {
-                var bites = Encoding.ASCII.GetBytes(row).ToList();
-                count += bites.Sum(bite => SparseBitcount(int.Parse(bite.ToString())));
+                var b2 = StringToByteArray(row);
+                count += b2.Sum(bite => SparseBitcount(int.Parse(bite.ToString())));
             }
 
             return count;
         }
 
+        // so#321370
+        public static byte[] StringToByteArray(string hex)
+        {
+            return Enumerable.Range(0, hex.Length)
+                             .Where(x => x % 2 == 0)
+                             .Select(x => Convert.ToByte(hex.Substring(x, 2), 16))
+                             .ToArray();
+        }
         // https://www.dotnetperls.com/bitcount
         static int SparseBitcount(int n)
         {
