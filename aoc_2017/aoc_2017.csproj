@@ -76,6 +76,9 @@
     <Compile Include="Day13\Firewall.cs" />
     <Compile Include="Day13\Layer.cs" />
     <Compile Include="Day13\Packet.cs" />
+    <Compile Include="Day14\Day_14.cs" />
+    <Compile Include="Day14\Disk.cs" />
+    <Compile Include="Day14\Knot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
