@@ -16,7 +16,7 @@ namespace aoc_2017.Day10
             var stdSuffix = new byte[] { 17, 31, 73, 47, 23 };
             bytes.AddRange(stdSuffix);
 
-            var lengths = bytes.Select(bit => (int)bit);
+            var lengths = bytes.Select(bit => (int)bit).ToList();
 
             var NumRounds = 64;
             var knot = new Knot(256);

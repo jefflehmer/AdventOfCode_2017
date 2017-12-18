@@ -10,8 +10,8 @@ namespace aoc_2017.Day14
     {
         public static void Do()
         {
-            var input = "flqrgnkx"; // test input
-            //var input = "wenycdww"; // puzzle input
+            //var input = "flqrgnkx"; // test input
+            var input = "wenycdww"; // puzzle input
 
             var disk = new Disk();
 
@@ -20,13 +20,14 @@ namespace aoc_2017.Day14
                 var knot = new Knot(256, $"{input}-{i}");
                 var dense = knot.Hash();
 
-                disk.GridRows.Add(dense);
+                disk.HexGridRows.Add(dense);
             }
 
             var numUsedSquares = disk.UsedSquares();
+            var groups = disk.Groups();
 
 
-            Console.Write($"Day 14: Number of squares used: {numUsedSquares}");
+            Console.Write($"Day 14: Squares used: {numUsedSquares}, Number of groups: { groups }");
             Console.ReadLine();
         }
     }
