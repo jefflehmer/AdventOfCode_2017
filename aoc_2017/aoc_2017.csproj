@@ -80,6 +80,9 @@
     <Compile Include="Day14\Disk.cs" />
     <Compile Include="Day14\Knot.cs" />
     <Compile Include="Day15\Day_15.cs" />
+    <Compile Include="Day16\Dancers.cs" />
+    <Compile Include="Day16\Day_16.cs" />
+    <Compile Include="Day16\Move.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -104,6 +107,8 @@
     <None Include="Day12\Day_12_test.aoc" />
     <None Include="Day13\Day_13_input.aoc" />
     <None Include="Day13\Day_13_test.aoc" />
+    <None Include="Day16\Day_16_input.aoc" />
+    <None Include="Day16\Day_16_test.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day06\TextFile1.txt" />
