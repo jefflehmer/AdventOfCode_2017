@@ -20,14 +20,14 @@ namespace aoc_2017.Day14
                 var knot = new Knot(256, $"{input}-{i}");
                 var dense = knot.Hash();
 
-                disk.HexGridRows.Add(dense);
+                disk.HexGridRows.Add(dense); // TODO: move to Disk class ctor
             }
 
             var numUsedSquares = disk.UsedSquares();
             var groups = disk.Groups();
 
 
-            Console.Write($"Day 14: Squares used: {numUsedSquares}, Number of groups: { groups }");
+            Console.Write($"Day 14: Squares used: { numUsedSquares }, Number of groups: { groups }");
             Console.ReadLine();
         }
     }
