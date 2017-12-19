@@ -79,6 +79,7 @@
     <Compile Include="Day14\Day_14.cs" />
     <Compile Include="Day14\Disk.cs" />
     <Compile Include="Day14\Knot.cs" />
+    <Compile Include="Day15\Day_15.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
