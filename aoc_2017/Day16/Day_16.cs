@@ -13,14 +13,19 @@ namespace aoc_2017.Day16
             var lines = System.IO.File.ReadAllLines(srcFile);
             var steps = lines[0].Split(',').ToList();
 
+            const int OneBillionTimes = 1;//000000000;
+
             var troupe = new Dancers();
-            foreach (var step in steps)
+            for (int i = 0; i < OneBillionTimes; i++)
             {
-                var movement = new Move(step);
-                troupe.Step(movement);
+                foreach (var step in steps)
+                {
+                    var movement = new Move(step);
+                    troupe.Step(movement);
+                }
             }
 
-            Console.Write($"Day 16: Programs Standing Order: { 0 }");
+            Console.WriteLine($"Day 16: Programs Standing Order: { troupe.CurrentLineUp }");
             Console.ReadLine();
         }
     }
