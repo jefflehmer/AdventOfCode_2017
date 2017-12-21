@@ -13,7 +13,7 @@ namespace aoc_2017.Day16
             var lines = System.IO.File.ReadAllLines(srcFile);
             var steps = lines[0].Split(',').ToList();
 
-            const int OneBillionTimes = 1;//000000000;
+            const int OneBillionTimes = 1000000000 % 48;
 
             var troupe = new Dancers();
             for (int i = 0; i < OneBillionTimes; i++)
@@ -23,6 +23,12 @@ namespace aoc_2017.Day16
                     var movement = new Move(step);
                     troupe.Step(movement);
                 }
+                /* used the following to determine a cycle of 48
+                    which we use to modulus the number of cycles to speed up.
+                    the final number of loops is really only 16! bpcekomfgjdlinha
+                if (troupe.CurrentLineUp == "abcdefghijklmnop")
+                    break;
+                */
             }
 
             Console.WriteLine($"Day 16: Programs Standing Order: { troupe.CurrentLineUp }");

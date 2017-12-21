@@ -114,6 +114,7 @@
     <Content Include="Day06\TextFile1.txt" />
     <Content Include="Day13\TextFile1.txt" />
     <Content Include="Day14\TextFile1.txt" />
+    <Content Include="Day16\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />

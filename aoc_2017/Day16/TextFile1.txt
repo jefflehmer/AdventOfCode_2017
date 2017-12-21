@@ -1,0 +1,28 @@
+﻿Day 16 Solutions - Permutation Promenade
+https://www.reddit.com/r/adventofcode/comments/7k572l/2017_day_16_solutions/
+
+https://www.reddit.com/r/adventofcode/comments/7kfgtd/2017_day_16_part_2_why_is_it_a_must/
+Landau's Function
+In mathematics, Landau's function g(n), named after Edmund Landau, is defined for every natural number n to be the largest order of an element of the symmetric group Sn. Equivalently, g(n) is the largest least common multiple (lcm) of any partition of n, or the maximum number of times a permutation of n elements can be recursively applied to itself before it returns to its starting sequence.
+
+For instance, 5 = 2 + 3 and lcm(2,3) = 6. No other partition of 5 yields a bigger lcm, so g(5) = 6.
+
+https://www.reddit.com/r/adventofcode/comments/7k5mrq/spoilers_in_title2017_day_16_part_2_cycles/
+Re-posting a cleaner version of this after chatting with some folks to make sure I wasn't completely off base.
+
+I think you can actually prove a pretty good upper bound on the cycle length - the cycle here has to be at most 1402 = 19600 long.
+
+As a bunch of people in the solution megathread have noticed, you can decompose the underlying transformation here into partner swaps and non-partner swaps. So the overall transformation T is given by applying the non-partner swaps, then applying all the partner swaps. The critical thing to notice here is that the non-partner swaps form a permutation of the string - call this permutation X. The partner swaps, however, form a permutation of the indices on the characters in the string (that is, imagine the string indexing into a dictionary containing 0 -> 15 and swapping the values in the dictionary, then at the end re-ordering the string by those values). Call this permutation P. You can apply X and P in any order, and if you want to apply T an arbitrary number of times, you can compute X that number of times and then P that number of times and get the same result as if you'd interleaved them.
+
+So we're looking for some value N such that XN and PN are both the identity, because then T applied N times will definitely give us back our original string. Note that X and P are both elements of S(16), so we know thanks to Landau's function, given by A000793, that there exist numbers A, B at most 140 such that XA and PB are the identity. Then LCM(A, B) should give us N, and LCM(A, B) is bound by 1402.
+
+It's possible that the cycle length is actually less than N here, if XZ and PZ applied to the string cancel out somehow even though neither is the identity. But this at least gives us an upper bound.
+
+EDIT: /u/jonathan_paulson found, and made a convincing argument, that the upper bound was smaller - 5460 - in this comment.
+
+https://www.reddit.com/r/adventofcode/comments/7k8xqw/2017_day_16_part_2_python_why_does_my_naive/
+
+https://www.reddit.com/r/adventofcode/comments/7k7m5y/day_16_part_2_what_are_your_cycle_lengths/
+
+https://www.reddit.com/r/adventofcode/comments/7k5jil/help_what_is_wrong_with_my_day_16_part_2_kotlin/
+
