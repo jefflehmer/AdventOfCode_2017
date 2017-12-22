@@ -83,6 +83,8 @@
     <Compile Include="Day16\Dancers.cs" />
     <Compile Include="Day16\Day_16.cs" />
     <Compile Include="Day16\Move.cs" />
+    <Compile Include="Day17\Day_17.cs" />
+    <Compile Include="Day17\SpinLock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
