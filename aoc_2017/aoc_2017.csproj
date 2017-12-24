@@ -85,6 +85,8 @@
     <Compile Include="Day16\Move.cs" />
     <Compile Include="Day17\Day_17.cs" />
     <Compile Include="Day17\SpinLock.cs" />
+    <Compile Include="Day18\Day_18.cs" />
+    <Compile Include="Day18\VirtualSoundCard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -111,6 +113,8 @@
     <None Include="Day13\Day_13_test.aoc" />
     <None Include="Day16\Day_16_input.aoc" />
     <None Include="Day16\Day_16_test.aoc" />
+    <None Include="Day18\Day_18_input.aoc" />
+    <None Include="Day18\Day_18_test.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day06\TextFile1.txt" />

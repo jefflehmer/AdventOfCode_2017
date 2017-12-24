@@ -20,6 +20,7 @@ using aoc_2017.Day14;
 using aoc_2017.Day15;
 using aoc_2017.Day16;
 using aoc_2017.Day17;
+using aoc_2017.Day18;
 
 namespace aoc_2017
 {
@@ -46,8 +47,9 @@ namespace aoc_2017
             Day_14.Do();
             Day_15.Do();
             Day_16.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day16\Day_16_input.aoc");
-            */
             Day_17.Do();
+            */
+            Day_18.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day18\Day_18_input.aoc");
         }
     }
 }

@@ -26,10 +26,14 @@ namespace aoc_2017.Day17
             Console.WriteLine($"Day 17.1: Value after { numInsertions } insertions: { spinlock.After }");
         }
 
+        // is this the Josephus Problem?
+        // https://en.wikipedia.org/wiki/Josephus_problem
         public static void Do_2()
         {
             const int numSteps = 337;
             const int numInsertions = 50000000;
+
+            // no list needed! only need to keep track of the index and the second value
             var idx = 0;
             var second = 0;
 
