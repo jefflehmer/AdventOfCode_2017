@@ -1,0 +1,24 @@
+﻿Bubble Sort
+
+https://www.reddit.com/r/adventofcode/comments/7kjaiu/2017_day_18_what_is_the_duet_actually_doing/
+
+I don't have a full understanding, but I believe program 0 is generating 127 pseudorandom numbers between 0 and 10,000 and sorting them in descending order using insertion sort, using program 1 to do the comparisons.
+
+It is using bubble sort; both programs are doing iterations of the bubble sort loop (first program 1, then program 0, then program 1, etc.)
+
+Actually, I believe it is using bubble sort. The way it works is:
+
+Program 0 feeds the list one-by-one (except two elements at the start) to program 1. Program 1 compares them, and outputs the smaller one. If the second one was smaller, it sets the 'f' flag to 1 to indicate that the list is not sorted, and we need to do another iteration. At the end of the iteration, program 0 has the same list in the queue, but with all adjacent inversions fixed. If no inversions were found (i.e. 'f' is still 0), program 1 drains its queue and exits.
+
+Make sure you use a Queue instead of a Stack
+
+The first value in the jgz can be a value instead of a register.
+
+https://www.reddit.com/r/adventofcode/comments/7kj35s/2017_day_18_solutions/
+
+Good example of using a BlockingCollection:
+https://pastebin.com/LU4eRmd8
+
+Good info on BlockingCollection's
+http://dotnetpattern.com/csharp-blockingcollection
+https://www.infoworld.com/article/3090215/application-development/how-to-work-with-blockingcollection-in-c.html
