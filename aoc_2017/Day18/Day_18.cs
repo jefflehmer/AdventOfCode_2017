@@ -10,8 +10,8 @@ namespace aoc_2017.Day18
     {
         public static void Do(string srcFile)
         {
-            //Do_1(srcFile);
-            Do_2(srcFile);
+            Do_1(srcFile);
+            //Do_2(srcFile);
             Console.ReadLine();
         }
         public static void Do_1(string srcFile)
