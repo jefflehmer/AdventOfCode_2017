@@ -90,6 +90,7 @@
     <Compile Include="Day18\VirtualSoundCard.cs" />
     <Compile Include="Day19\Day_19.cs" />
     <Compile Include="Day19\RoutingDiagram.cs" />
+    <Compile Include="Day20\Day_20.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -120,6 +121,8 @@
     <None Include="Day18\Day_18_test.aoc" />
     <None Include="Day19\Day_19_input.aoc" />
     <None Include="Day19\Day_19_test.aoc" />
+    <None Include="Day20\Day_20_input.aoc" />
+    <None Include="Day20\Day_20_test.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day06\TextFile1.txt" />
