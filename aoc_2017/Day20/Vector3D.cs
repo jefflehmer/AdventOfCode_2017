@@ -36,5 +36,18 @@ namespace aoc_2017.Day20
         {
             return new Vector3D(right.X + left.X, right.Y + left.Y, right.Z + left.Z);
         }
+
+        public static bool operator ==(Vector3D left, Vector3D right)
+        {
+            return right.X == left.X && right.Y == left.Y && right.Z == left.Z;
+        }
+        public static bool operator !=(Vector3D left, Vector3D right)
+        {
+            return !(left == right);
+        }
+        public override bool Equals(object vec)
+        {
+            return this == (Vector3D) vec;
+        }
     }
 }

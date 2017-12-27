@@ -125,7 +125,8 @@
     <None Include="Day19\Day_19_input.aoc" />
     <None Include="Day19\Day_19_test.aoc" />
     <None Include="Day20\Day_20_input.aoc" />
-    <None Include="Day20\Day_20_test.aoc" />
+    <None Include="Day20\Day_20_test_1.aoc" />
+    <None Include="Day20\Day_20_test_2.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day06\TextFile1.txt" />

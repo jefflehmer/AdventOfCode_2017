@@ -1,6 +1,7 @@
 ﻿Solutions
 https://www.reddit.com/r/adventofcode/comments/7kz6ik/2017_day_20_solutions/
 
+https://www.reddit.com/r/adventofcode/comments/7kz6ik/2017_day_20_solutions/drikzxk/
 https://www.reddit.com/r/adventofcode/comments/7l42yy/day_20_with_calculus/
 Day 20 with calculus (self.adventofcode)
 
