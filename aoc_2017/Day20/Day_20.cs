@@ -18,7 +18,8 @@ namespace aoc_2017.Day20
             for (var i = 0; i < SampleSetSize; i++)
                 swarm.Next();
 
-            Console.WriteLine($"Day 20: Closest particle: { swarm.ClosestLongTerm.Index }");
+            //Console.WriteLine($"Day 20: Closest particle: { swarm.ClosestLongTerm.Index }"); // this will only work when you comment out the EliminateCollisions() call in Swarm. Don't have the time to care to fix it.
+            Console.WriteLine($"Day 20: Particles remaining: { swarm.Particles.Count }");
             Console.ReadLine();
         }
     }
