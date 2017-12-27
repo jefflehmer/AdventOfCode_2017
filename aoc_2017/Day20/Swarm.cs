@@ -49,16 +49,24 @@ namespace aoc_2017.Day20
             }
         }
 
-        public void Next(int i)
+        public void Next()
         {
-            var count = 0;
             foreach (var particle in Particles)
             {
                 particle.Velocity = particle.UpdateVelocity;
                 particle.Position = particle.UpdatePosition;
             }
 
-            Closests.Add(i, count);
+            var closest = ClosestNow;
+            if (!Closests.ContainsKey(closest.Index))
+            {
+                Closests.Add(closest.Index, 1);
+            }
+            else
+            {
+                var closests = ++Closests[closest.Index];
+                Closests[closest.Index] = closests;
+            }
         }
     }
 }

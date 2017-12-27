@@ -21,7 +21,7 @@ namespace aoc_2017.Day20
 
         public static Particle Parse(string raw, int index)
         {
-            var match = Regex.Match(raw, @"p=<(?<position>.*)>, v=<(?<vector>.*)>, a=<(?<acceleration>.*$)>");
+            var match = Regex.Match(raw, @"p=<(?<position>.*)>, v=<(?<vector>.*)>, a=<(?<acceleration>.*)>$");
             var positions = match.Groups["position"].ToString().Split(',');
             var vectors = match.Groups["vector"].ToString().Split(',');
             var accelerations = match.Groups["acceleration"].ToString().Split(',');

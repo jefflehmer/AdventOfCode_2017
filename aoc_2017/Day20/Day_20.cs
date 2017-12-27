@@ -16,7 +16,7 @@ namespace aoc_2017.Day20
 
             const int SampleSetSize = 1000;
             for (var i = 0; i < SampleSetSize; i++)
-                swarm.Next(i);
+                swarm.Next();
 
             Console.WriteLine($"Day 20: Closest particle: { swarm.ClosestLongTerm.Index }");
             Console.ReadLine();
