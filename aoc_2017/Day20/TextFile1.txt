@@ -1,0 +1,50 @@
+﻿Solutions
+https://www.reddit.com/r/adventofcode/comments/7kz6ik/2017_day_20_solutions/
+
+https://www.reddit.com/r/adventofcode/comments/7l42yy/day_20_with_calculus/
+Day 20 with calculus (self.adventofcode)
+
+submitted 5 days ago by glenbolake
+
+After doing the iterative solution that most people came up with, I wanted to try and solve day 20 with math. After all, this should be a simple case of pos(t) = 1/2*a*t^2 + v*t + p. We can choose a t that's sufficiently high based on the initial values for part 1, then find collision times for part 2 by combining particles and solving for zero.
+
+This gave me some trouble at first, because of the "increase velocity then position" aspect; the standard kinematic equations don't apply. After putting values for 0<t<12 for a random point into a table, I found the position equation is actually this:
+
+pos(t) = p + vt + t(t+1)/2*a
+i.e., acceleration is actually based on triangular numbers.
+
+Part 1
+I took the Manhattan-distance magnitude of all particles' initial accelerations, multiplied by 100, and used that for t. In my case, that gave t = 6700, which is more than enough. The answer was solidified by t=359 for my input.
+
+Part 2
+Naturally, it gets a little more complicated here. But not much.
+
+For each pair of particles, I created a new fake particle that was the difference between them. e.g., two of my particles were
+
+p=<1381, -388, -404>, v=<-175, 24, 29>, a=<7, 2, 2>
+p=<-144, -1008, -374>, v=<5, 163, 59>, a=<2, -12, -4
+And this became
+
+p=<1525, 620, -30>, v=<-180, -139, -30>, a=<5, 14, 6>
+I then took the three pva tuples and solved for zero. The p(t) above is quadratic with p(t) = a/2*t^2 + (v+a/2)t + p. So for these two points:
+
+1/2*5*t^2 + (-180+5/2)t + 1525 = 0 --> t = 10, 61
+1/2*14*t^2 + (-139+14/2)t + 620 = 0 --> t = 8.857142857, 10
+1/2*6*t^2 + (-30-6/2)t - 30 = 0 --> t = -1, 10
+All three of these have +10 in the solution, so they collide at t=10.
+
+I then had to step through the collisions in order, making sure to remove particles as necessary. This was tricky. Consider:
+
+t=1: A collides with B
+t=3: A collides with C, D collides with E
+In this case, we would remove A and B at t=1, then remove D and E at t=3, but not C because A was no longer there for it to collide with.
+
+https://www.reddit.com/r/adventofcode/comments/7kzchz/2017_day_20_part_1_metric/
+The position of a particle can be calculated as: p = p0 + v0t + at*t/2
+
+"In the long run" means that t goes infinitely up. Which means that the coefficient before t*t is the only one that matters (acceleration). In other words, the particle with the lowest absolute acceleration (which in this case - Manhattan distance - is defined as abs(ax) + abs(ay) + abs(az)) will remain closest to the center (0,0,0).
+
+In case of a tie (more than one particles have the minimal absolute value of the acceleration), the one with the lowest absolute initial speed will be the closest.
+
+In case of yet another tie, the particle with the lowest absolute initial position will be the closest.
+

@@ -52,6 +52,7 @@ namespace aoc_2017
             Day_17.Do();
             Day_18.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day18\Day_18_input.aoc");
             Day_19.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day19\Day_19_input.aoc");
+            Day_20.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day20\Day_20_input.aoc");
             */
             Day_20.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day20\Day_20_test.aoc");
         }

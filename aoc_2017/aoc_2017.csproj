@@ -91,6 +91,9 @@
     <Compile Include="Day19\Day_19.cs" />
     <Compile Include="Day19\RoutingDiagram.cs" />
     <Compile Include="Day20\Day_20.cs" />
+    <Compile Include="Day20\Particle.cs" />
+    <Compile Include="Day20\Swarm.cs" />
+    <Compile Include="Day20\Vector3D.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -130,6 +133,7 @@
     <Content Include="Day14\TextFile1.txt" />
     <Content Include="Day16\TextFile1.txt" />
     <Content Include="Day18\TextFile1.txt" />
+    <Content Include="Day20\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />

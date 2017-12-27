@@ -10,10 +10,15 @@ namespace aoc_2017.Day20
     {
         public static void Do(string srcFile)
         {
-            var paths = System.IO.File.ReadAllLines(srcFile);
+            var rawParticles = System.IO.File.ReadAllLines(srcFile);
 
+            var swarm = new Swarm(rawParticles);
 
-            Console.WriteLine($"Day 20: Closest particle: { 0 }");
+            const int SampleSetSize = 1000;
+            for (var i = 0; i < SampleSetSize; i++)
+                swarm.Next(i);
+
+            Console.WriteLine($"Day 20: Closest particle: { swarm.ClosestLongTerm.Index }");
             Console.ReadLine();
         }
     }
