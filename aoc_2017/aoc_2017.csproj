@@ -94,6 +94,10 @@
     <Compile Include="Day20\Particle.cs" />
     <Compile Include="Day20\Swarm.cs" />
     <Compile Include="Day20\Vector3D.cs" />
+    <Compile Include="Day21\Day_21.cs" />
+    <Compile Include="Day21\Grid.cs" />
+    <Compile Include="Day21\Image.cs" />
+    <Compile Include="Day21\Rule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -127,6 +131,8 @@
     <None Include="Day20\Day_20_input.aoc" />
     <None Include="Day20\Day_20_test_1.aoc" />
     <None Include="Day20\Day_20_test_2.aoc" />
+    <None Include="Day21\Day_21_input.aoc" />
+    <None Include="Day21\Day_21_test.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day06\TextFile1.txt" />
@@ -135,6 +141,7 @@
     <Content Include="Day16\TextFile1.txt" />
     <Content Include="Day18\TextFile1.txt" />
     <Content Include="Day20\TextFile1.txt" />
+    <Content Include="Day21\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />

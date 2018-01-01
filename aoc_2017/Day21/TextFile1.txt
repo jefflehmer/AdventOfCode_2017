@@ -1,0 +1,58 @@
+﻿
+Basically, on each iteration you split current grid, lookup its chunks in the book, and build new bigger grid from new chunks.
+
+You now have a 6x6 cell as a result. When applying new rules to it, you have to split it into 2x2 cells again, because 6 can be devided by 2 (also 3, but 2 is the priority).
+
+It’s a 90/180/270 degree rotation of the square, plus flips. You should have 8 variants in all for the 3x3 input grid.
+
+https://www.reddit.com/r/adventofcode/comments/7l8nze/2017_day_21_am_i_missing_something/
+You can do a 90 degree rotation quite easily by flipping the transpose matrix
+
+[–]Pyryara 1 point 5 days ago 
+Thank you, I'm copying your code because I really couldn't figure out how to generate these patterns... I do understand how you do the flip, but can you tell me what the logic is behind the rotation? How does it work?
+
+[–]dario_p1 1 point 4 days ago* 
+It isn't that complex, what it does is basically take each column from left to right, reverse it and use it as a row in the new matrix. As an example, it goes from
+
+1 2 3
+4 5 6
+7 8 9
+to
+
+7 4 1
+8 5 2
+9 6 3
+Here the first column (1 4 7) gets reversed (7 4 1) and used as the first row, the second column does the same and becomes the second row, and the third column becomes the third row.
+
+To explain the code a little bit, the inner for loop is responsible for reversing the i-th column, while the outer loop iterates over columns. A simpler to read variant would be something like this:
+
+output = []
+for i in range(len(self.m)):
+    row = ''
+    for j in range(len(self.m) - 1, -1, -1):
+        row += self.m[j][i]
+    output += [row]
+self.m = output
+Self.m is saved in row-major form, so the previous example would be saved as
+
+['123', '456', '789'] 
+
+https://www.reddit.com/r/adventofcode/comments/7l78eb/2017_day_21_solutions/
+That was one heck of a ride! (Also first time a rank under 1000 (795)!)
+
+I loved this puzzle, hard but wonderful! Really messy but it works.
+
+I've generated all rules (flipped and rotated, probably a couple times too much ;P) at startup to reduce calculations when actually running through.
+First we have a input Pattern (which consists of a List<string> content)
+Then we Spit it into a List<List<Pattern>> to create the sub patterns 2d array
+After that we search for a fitting rule and apply those to each sub pattern
+And at last we join the List<List<Pattern>> sub patterns to a proper Pattern again. (This was the most messiest part, couldn't figure out how to get the newSize, so I just did the first subpattern groups (top rows) and got the newsize after that.
+
+https://github.com/rprouse/AdventOfCode2017/blob/master/AdventOfCode2017/Day21/Day21.cs
+
+
+When I got stuck once I looked around at what others did and found this guy had a similar style to me:
+https://gitlab.com/lyze237/AdventOfCode/tree/2017
+
+This guy had some fun stuff.  He also manipulated strings rather than grids.
+https://github.com/csuzw/AdventOfCode/blob/master/2017/21FractalArt.linq
