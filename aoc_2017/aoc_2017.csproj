@@ -98,6 +98,7 @@
     <Compile Include="Day21\Grid.cs" />
     <Compile Include="Day21\Image.cs" />
     <Compile Include="Day21\Rule.cs" />
+    <Compile Include="Day22\Day_22.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -133,6 +134,8 @@
     <None Include="Day20\Day_20_test_2.aoc" />
     <None Include="Day21\Day_21_input.aoc" />
     <None Include="Day21\Day_21_test.aoc" />
+    <None Include="Day22\Day_22_input.aoc" />
+    <None Include="Day22\Day_22_test.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day06\TextFile1.txt" />
