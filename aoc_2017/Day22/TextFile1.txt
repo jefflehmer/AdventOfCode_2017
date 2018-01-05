@@ -1,0 +1,10 @@
+﻿Langton's Ant
+
+Part 1 typically develops a highway on the map.
+
+Interesting Part 2 posts:
+https://www.reddit.com/r/adventofcode/comments/7lnfv9/2017_day_22_part_2_optimizing_assembly_code/
+https://www.reddit.com/r/adventofcode/comments/7lkq1a/2017_day_22_part_2_viral_regexes/
+
+Day 22 Solutions
+https://www.reddit.com/r/adventofcode/comments/7lf943/2017_day_22_solutions/

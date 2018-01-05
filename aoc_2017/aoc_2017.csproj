@@ -98,7 +98,11 @@
     <Compile Include="Day21\Grid.cs" />
     <Compile Include="Day21\Image.cs" />
     <Compile Include="Day21\Rule.cs" />
+    <Compile Include="Day22\Cursor.cs" />
     <Compile Include="Day22\Day_22.cs" />
+    <Compile Include="Day22\EvolvedMap.cs" />
+    <Compile Include="Day22\Map.cs" />
+    <Compile Include="Day22\Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -145,6 +149,7 @@
     <Content Include="Day18\TextFile1.txt" />
     <Content Include="Day20\TextFile1.txt" />
     <Content Include="Day21\TextFile1.txt" />
+    <Content Include="Day22\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />
