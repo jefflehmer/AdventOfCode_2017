@@ -103,6 +103,8 @@
     <Compile Include="Day22\EvolvedMap.cs" />
     <Compile Include="Day22\Map.cs" />
     <Compile Include="Day22\Node.cs" />
+    <Compile Include="Day23\Day_23.cs" />
+    <Compile Include="Day23\Tablet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -140,6 +142,7 @@
     <None Include="Day21\Day_21_test.aoc" />
     <None Include="Day22\Day_22_input.aoc" />
     <None Include="Day22\Day_22_test.aoc" />
+    <None Include="Day23\Day_23_input.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day06\TextFile1.txt" />
@@ -150,6 +153,7 @@
     <Content Include="Day20\TextFile1.txt" />
     <Content Include="Day21\TextFile1.txt" />
     <Content Include="Day22\TextFile1.txt" />
+    <Content Include="Day23\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />
