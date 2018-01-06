@@ -21,10 +21,18 @@ namespace aoc_2017.Day24
             var pieces = System.IO.File.ReadAllLines(srcFile);
 
             var components = new List<Component>(pieces.Length);
-            components.AddRange(pieces.Select(piece => new Component {Ports = piece.Split('/').Select(e => new Port {Pins = int.Parse(e)}).ToList()}));
+            components.AddRange(pieces.Select(piece => new Component(piece.Split('/').Select(int.Parse).ToList()) ));
 
+            const int StartingPin = 0;
+            var zeroPinComponents = components.Where(c => c.Ports.Contains(StartingPin));
+            var strengths = new List<int>(zeroPinComponents.Count());
+            foreach (var zeroPinComponent in zeroPinComponents)
+            {
+                var openPort = (zeroPinComponent.Ports.Count(p => p != StartingPin) == 1) ? zeroPinComponent.Ports.First(p => p != StartingPin) : StartingPin;
+                strengths.Add(zeroPinComponent.Construct(components, openPort));
+            }
 
-            Console.WriteLine($"Day 24.1: Strength of strongest bridge: { 0 }");
+            Console.WriteLine($"Day 24.1: Strength of strongest bridge: { strengths.Max() }");
         }
 
         public static void Do_2(string srcFile)
