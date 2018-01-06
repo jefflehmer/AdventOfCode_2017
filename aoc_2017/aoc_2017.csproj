@@ -104,6 +104,7 @@
     <Compile Include="Day22\Map.cs" />
     <Compile Include="Day22\Node.cs" />
     <Compile Include="Day23\Day_23.cs" />
+    <Compile Include="Day23\OptimizedTablet.cs" />
     <Compile Include="Day23\Tablet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

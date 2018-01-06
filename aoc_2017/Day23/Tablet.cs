@@ -20,6 +20,10 @@ namespace aoc_2017.Day23
             Registers = new Dictionary<string, long>();
             MulCount = 0;
         }
+        public Tablet(string seedRegister, int seedValue): this()
+        {
+            Registers.Add(seedRegister, seedValue);
+        }
         public long Invoke(string rawInstruction)
         {
             var match = Regex.Match(rawInstruction, @"(?<instruction>.*) (?<register1>.*) (?<register2>.*$)");

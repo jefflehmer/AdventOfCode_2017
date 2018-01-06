@@ -10,7 +10,7 @@ namespace aoc_2017.Day23
     {
         public static void Do(string srcFile)
         {
-            //Do_1(srcFile);
+            Do_1(srcFile);
             Do_2(srcFile);
 
             Console.ReadLine();
@@ -27,21 +27,14 @@ namespace aoc_2017.Day23
                 idx += tablet.Invoke(instructions[idx]);
             } while (idx >= 0 && idx < instructions.Length);
 
-            Console.WriteLine($"Day 23: Number of times 'mul' is invoked: { tablet.MulCount }");
+            Console.WriteLine($"Day 23.1: Number of times 'mul' is invoked: { tablet.MulCount }");
         }
 
         public static void Do_2(string srcFile)
         {
-            var instructions = System.IO.File.ReadAllLines(srcFile);
+            var otablet = new OptimizedTablet();
 
-            var tablet = new Tablet();
-            var idx = 0L;
-            do
-            {
-                idx += tablet.Invoke(instructions[idx]);
-            } while (idx >= 0 && idx < instructions.Length);
-
-            Console.WriteLine($"Day 23: Number of times 'mul' is invoked: { tablet.MulCount }");
+            Console.WriteLine($"Day 23.2: Value left in register h: { otablet.Invoke() }");
         }
     }
 }
