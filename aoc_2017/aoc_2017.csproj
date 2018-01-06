@@ -106,6 +106,9 @@
     <Compile Include="Day23\Day_23.cs" />
     <Compile Include="Day23\OptimizedTablet.cs" />
     <Compile Include="Day23\Tablet.cs" />
+    <Compile Include="Day24\Component.cs" />
+    <Compile Include="Day24\Day_24.cs" />
+    <Compile Include="Day24\Port.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -144,6 +147,8 @@
     <None Include="Day22\Day_22_input.aoc" />
     <None Include="Day22\Day_22_test.aoc" />
     <None Include="Day23\Day_23_input.aoc" />
+    <None Include="Day24\Day_24_input.aoc" />
+    <None Include="Day24\Day_24_test.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day06\TextFile1.txt" />
@@ -155,6 +160,7 @@
     <Content Include="Day21\TextFile1.txt" />
     <Content Include="Day22\TextFile1.txt" />
     <Content Include="Day23\TextFile1.txt" />
+    <Content Include="Day24\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />

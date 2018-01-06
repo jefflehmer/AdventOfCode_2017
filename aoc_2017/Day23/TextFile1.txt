@@ -4,12 +4,15 @@ https://www.reddit.com/r/adventofcode/comments/7lms6p/2017_day_23_solutions/
 It's like part 1 of Day 18.
 https://www.reddit.com/r/adventofcode/comments/7loiqe/day_23_which_part_of_day_18_does_it_refer_to/
 
-Peephole optimization
-https://www.reddit.com/r/adventofcode/comments/7lrjei/2017_day_23_peephole_optimization_anyone/
-
-https://www.reddit.com/r/adventofcode/comments/7lp6bp/day_23_part_2_where_am_i_going_wrong/#s
 consider using a modulo to simplify the inner-most loop
+https://www.reddit.com/r/adventofcode/comments/7lp6bp/day_23_part_2_where_am_i_going_wrong/#s
 
-it says jump if not zero. Day 18 had said greater than zero
-I implemented jnz as jz, that was not so fun do debug
 
+Part 2:
+https://www.reddit.com/r/adventofcode/comments/7lpf2n/2017_day_23_part_2_python_3_find_my_mistake/
+https://gist.github.com/BartMassey/d2ed5813a6af87e41c8c2730df6f4b6e
+https://www.reddit.com/r/adventofcode/comments/7lo2ed/can_someone_explain_day_23_part_2/
+https://en.wikipedia.org/wiki/Primality_test
+
+Jeff: Converted from assembly to code by hand. At the end I converted a while-loop to a for-loop. 
+	  Really short and really fast compared to running in the simulator.

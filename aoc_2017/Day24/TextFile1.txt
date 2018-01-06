@@ -1,0 +1,17 @@
+﻿Day 24: Electromagnetic Moat
+https://www.reddit.com/r/adventofcode/comments/7lte5z/2017_day_24_solutions/
+
+https://www.reddit.com/r/adventofcode/comments/7lvwg9/day_24_related_research_paper/
+Found this whilst I was researching Longest Simple Path problem, and thinking about how to make an Astar algorithm work.
+Finding long simple paths in a weighted digraph using pseudo-topological orderings
+https://arxiv.org/pdf/1609.07450
+
+https://www.reddit.com/r/adventofcode/comments/7lyiq1/2017_day_24_an_efficient_solution/
+It is possible to solve the day24 problem faster than brute force. I have implemented a solution that takes around O(n4), based on maximal matching. See https://github.com/twanvl/longest-path.
+Note: the NP-hard problem is finding the longest simple path, which is a path that visits each vertex at most once. The day 24 problem allows for cycles, i.e. using multiple components with the same type of ports. This makes the problem feasible.
+
+https://www.reddit.com/r/adventofcode/comments/7lunzu/2017_day_24_so_can_it_be_done_more_efficiently/
+Looking through the solutions thread it seems everyone is doing the obvious recursion/backtracking approach, or variants thereof. In the worst case, that's an O(n!) time complexity.
+Is there a better way? I thought about pathfinding algorithms, but we're not exactly finding a path from A to B, but rather the "longest" path from A without using an edge twice. I also thought about dynamic programming, but I'm not sure how it would apply here.
+
+Jeff: It looks like recursion on immutable lists is popular.
