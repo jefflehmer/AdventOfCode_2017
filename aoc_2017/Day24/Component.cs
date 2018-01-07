@@ -11,9 +11,6 @@ namespace aoc_2017.Day24
         public List<int> Ports { get; set; }
         public bool InUse { get; set; }
         public int Strength => Ports.Sum();
-        public int Depth { get; set; }
-        public int Port1 => Ports[0];
-        public int Port2 => Ports[1];
 
         public Component(List<int> ports)
         {
@@ -22,17 +19,16 @@ namespace aoc_2017.Day24
             Depth = 0;
         }
 
-        // recursive method
-        public int Construct(List<Component> components, int port)
+        // recursive method for Part One
+        public int Strongest(List<Component> components, int port)
         {
             InUse = true;
-            Depth++;
 
             var matchingPinComponents = components.Where(c => !c.InUse && c.Ports.Contains(port)); // collect all the unused components that have a matching port
             if (!matchingPinComponents.Any())
             {
                 InUse = false;
-                return this.Strength;//.Reset();
+                return this.Strength;
             }
 
             // recurse down each component with a matching pin to get a collection of their strengths
@@ -40,11 +36,36 @@ namespace aoc_2017.Day24
             foreach (var matchingPinComponent in matchingPinComponents)
             {
                 var openPort = (matchingPinComponent.Ports.Count(p => p != port) == 1) ? matchingPinComponent.Ports.First(p => p != port) : port;
-                descendantStrengths.Add(matchingPinComponent.Construct(components, openPort));
+                descendantStrengths.Add(matchingPinComponent.Strongest(components, openPort));
             }
 
             InUse = false;
             return this.Strength + descendantStrengths.Max();
+        }
+
+        // recursive method for Part Two
+        public Tuple<int, int> Longest(List<Component> components, int port)
+        {
+            InUse = true;
+
+            var matchingPinComponents = components.Where(c => !c.InUse && c.Ports.Contains(port)); // collect all the unused components that have a matching port
+            if (!matchingPinComponents.Any())
+            {
+                InUse = false;
+                return new Tuple<int, int>(1, Strength);
+            }
+
+            // recurse down each component with a matching pin to get a collection of their lengths
+            foreach (var matchingPinComponent in matchingPinComponents)
+            {
+                var openPort = (matchingPinComponent.Ports.Count(p => p != port) == 1) ? matchingPinComponent.Ports.First(p => p != port) : port;
+                descendantLengths.Add(matchingPinComponent.Longest(components, openPort));
+            }
+
+            InUse = false;
+            var longest = descendantLengths.Where(l => l.Item1 == descendantLengths.Max(t => t.Item1));
+            var strongest = longest.First(l => l.Item2 == longest.Max(s => s.Item2));
+            return new Tuple<int, int>(strongest.Item1 + 1, strongest.Item2 + Strength);
         }
     }
 }

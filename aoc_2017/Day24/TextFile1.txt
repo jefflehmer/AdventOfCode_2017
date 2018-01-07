@@ -13,5 +13,24 @@ Note: the NP-hard problem is finding the longest simple path, which is a path th
 https://www.reddit.com/r/adventofcode/comments/7lunzu/2017_day_24_so_can_it_be_done_more_efficiently/
 Looking through the solutions thread it seems everyone is doing the obvious recursion/backtracking approach, or variants thereof. In the worst case, that's an O(n!) time complexity.
 Is there a better way? I thought about pathfinding algorithms, but we're not exactly finding a path from A to B, but rather the "longest" path from A without using an edge twice. I also thought about dynamic programming, but I'm not sure how it would apply here.
+This seriously looks like a problem called 'longest simple path', which is NP-complete, although whether this problem is NP-complete is what I'm not certain.
+Longest path problem
 
-Jeff: It looks like recursion on immutable lists is popular.
+In graph theory and theoretical computer science, the longest path problem is the problem of finding a simple path of maximum length in a given graph. A path is called simple if it does not have any repeated vertices; the length of a path may either be measured by its number of edges, or (in weighted graphs) by the sum of the weights of its edges. In contrast to the shortest path problem, which can be solved in polynomial time in graphs without negative-weight cycles, the longest path problem is NP-hard, meaning that it cannot be solved in polynomial time for arbitrary graphs unless P = NP. Stronger hardness results are also known showing that it is difficult to approximate. However, it has a linear time solution for directed acyclic graphs, which has important applications in finding the critical path in scheduling problems.
+
+Dynamic Programming or memoization is a possibility. See the Unary Knapsack Problem. Yes, Day 24 is NP-complete in general, but the given instance has few enough pieces that you can afford to build the tables for a substantial speed win.
+So I believe, anyway. Depth-first search was so fast that it didn't seem worth optimizing.
+
+Yep, this had me thinking for a while as I thought that the obvious DFS would take too long and that there's is a trick. Finally I caved, and DFS did just fine on this input size, but would be curious about better ways.
+
+https://www.reddit.com/r/adventofcode/comments/7lvkrx/2017_day_24_part_1python_trying_to_solve_with/
+I used a basic graph traversal algorithm.  Instead of keeping track of which nodes were visited, I kept track of which edges were visited.  That way you can revisit a node without reusing a 'component' (edge).
+
+https://www.reddit.com/r/adventofcode/comments/7lvkrx/2017_day_24_part_1python_trying_to_solve_with/drygbuv/
+DFS is correct. That is what I used to solve the problem. Even if you are done trying to solve it yourself, I encourage you to look at the solution thread and see how others solved the puzzle. (DFS isn't the only way to do it.) That way if you see this type of puzzle again you'll know how to solve it.
+My solution involved modeling the graph as an adjacency list using a defaultdict of lists. Then I used a basic recursive DFS that kept track of the current max score for part A; and the current max depth and max score for that depth for part B.
+
+
+Jeff: It looks like recursion on immutable lists is a good way to go.
+	  Although using a stack for DFS would be a good idea as well. Although one comment said it was slower.
+
