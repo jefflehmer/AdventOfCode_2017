@@ -12,11 +12,12 @@ namespace aoc_2017.Day24
         public bool InUse { get; set; }
         public int Strength => Ports.Sum();
 
+        //public int Depth { get; set; } better to build in the depth as a return value rather than try to maintain the state at each node
+
         public Component(List<int> ports)
         {
             Ports = ports;
             InUse = false;
-            Depth = 0;
         }
 
         // recursive method for Part One
@@ -56,6 +57,7 @@ namespace aoc_2017.Day24
             }
 
             // recurse down each component with a matching pin to get a collection of their lengths
+            var descendantLengths = new List< Tuple<int, int> >(matchingPinComponents.Count());
             foreach (var matchingPinComponent in matchingPinComponents)
             {
                 var openPort = (matchingPinComponent.Ports.Count(p => p != port) == 1) ? matchingPinComponent.Ports.First(p => p != port) : port;
