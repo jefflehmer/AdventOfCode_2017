@@ -9,6 +9,7 @@ namespace aoc_2017.Day25
 {
     public class State
     {
+        #region props, fields, consts, and ctors
         public MoveWrite Zero { get; set; }
         public MoveWrite One { get; set; }
 
@@ -42,6 +43,7 @@ namespace aoc_2017.Day25
 
             return new State(zero, one);
         }
+        #endregion props, fields, consts, and ctors
 
         public class MoveWrite
         {
@@ -53,13 +55,13 @@ namespace aoc_2017.Day25
 
             public MoveWrite(int write, TapeDirection move, string next)
             {
-                Write = write;
-                Move = move;
-                Next = next;
+                WriteValue = write;
+                MoveDirection = move;
+                NextState = next;
             }
-            public int Write { get; set; }
-            public TapeDirection Move { get; set; }
-            public string Next { get; set; }
+            public int WriteValue { get; set; }
+            public TapeDirection MoveDirection { get; set; }
+            public string NextState { get; set; }
         }
     }
 }

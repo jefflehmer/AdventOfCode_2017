@@ -1,0 +1,2 @@
+﻿Day 25: The Halting Problem
+https://www.reddit.com/r/adventofcode/comments/7lzo3l/2017_day_25_solutions/

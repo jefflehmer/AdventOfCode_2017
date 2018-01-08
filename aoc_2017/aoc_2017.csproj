@@ -167,6 +167,7 @@
     <Content Include="Day22\TextFile1.txt" />
     <Content Include="Day23\TextFile1.txt" />
     <Content Include="Day24\TextFile1.txt" />
+    <Content Include="Day25\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />
