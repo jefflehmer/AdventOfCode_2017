@@ -109,6 +109,10 @@
     <Compile Include="Day24\Component.cs" />
     <Compile Include="Day24\Day_24.cs" />
     <Compile Include="Day24\Port.cs" />
+    <Compile Include="Day25\Day_25.cs" />
+    <Compile Include="Day25\ExtensionMethods.cs" />
+    <Compile Include="Day25\State.cs" />
+    <Compile Include="Day25\Turing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -149,6 +153,8 @@
     <None Include="Day23\Day_23_input.aoc" />
     <None Include="Day24\Day_24_input.aoc" />
     <None Include="Day24\Day_24_test.aoc" />
+    <None Include="Day25\blueprints_input.aoc" />
+    <None Include="Day25\blueprints_test.aoc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Day06\TextFile1.txt" />
