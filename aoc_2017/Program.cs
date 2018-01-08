@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,6 +36,7 @@ namespace aoc_2017
         static void Main(string[] args)
         {
             /*
+            */
             Day_01_First.Do();
             Day_01_Second.Do();
             Day_02_First.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day02\Day_02_First_test_1.aoc");
@@ -62,8 +63,7 @@ namespace aoc_2017
             Day_22.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day22\Day_22_input.aoc");
             Day_23.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day23\Day_23_input.aoc");
             Day_24.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day24\Day_24_input.aoc");
-            */
-            Day_25.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day25\blueprints_test.aoc");
+            Day_25.Do(@"C:\github\AdventOfCode_2017\aoc_2017\Day25\blueprints_input.aoc");
         }
     }
 }
