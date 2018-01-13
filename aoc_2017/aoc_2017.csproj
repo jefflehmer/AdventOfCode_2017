@@ -157,17 +157,43 @@
     <None Include="Day25\blueprints_test.aoc" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About_AdventOfCode.txt" />
+    <Content Include="Day01\Inverse_Captcha_01.txt" />
+    <Content Include="Day02\Corruption_Checksum_02.txt" />
+    <Content Include="Day03\Spiral_Memory_03.txt" />
+    <Content Include="Day04\High_Entropy_Passphrases_04.txt" />
+    <Content Include="Day05\Maze_of_Twisty_Trampolines--All_Alike_05.txt" />
+    <Content Include="Day06\Memory_Reallocation_06.txt" />
     <Content Include="Day06\TextFile1.txt" />
+    <Content Include="Day07\Recursive_Circus_07.txt" />
+    <Content Include="Day08\I_Heard_You_like_Registers_08.txt" />
+    <Content Include="Day09\Stream_Processing_09.txt" />
+    <Content Include="Day10\Knot_Hash_10.txt" />
+    <Content Include="Day11\Hex_Ed_11.txt" />
+    <Content Include="Day12\Digital_Plumber_12.txt" />
+    <Content Include="Day13\Packet_Scanners_13.txt" />
     <Content Include="Day13\TextFile1.txt" />
+    <Content Include="Day14\Disk_Defragmentation_14.txt" />
     <Content Include="Day14\TextFile1.txt" />
+    <Content Include="Day15\Dueling_Generators_15.txt" />
+    <Content Include="Day16\Permutation_Promenade_16.txt" />
     <Content Include="Day16\TextFile1.txt" />
+    <Content Include="Day17\Spinlock_17.txt" />
+    <Content Include="Day18\Duet_18.txt" />
     <Content Include="Day18\TextFile1.txt" />
+    <Content Include="Day19\A_Series_Of_Tubes_19.txt" />
+    <Content Include="Day20\Particle_Swarm_20.txt" />
     <Content Include="Day20\TextFile1.txt" />
+    <Content Include="Day21\Fractal_Art_21.txt" />
     <Content Include="Day21\TextFile1.txt" />
+    <Content Include="Day22\Sporifica_Virus_22.txt" />
     <Content Include="Day22\TextFile1.txt" />
+    <Content Include="Day23\Coprocessor_Conflagration_23.txt" />
     <Content Include="Day23\TextFile1.txt" />
+    <Content Include="Day24\Electromagnetic_Moat_24.txt" />
     <Content Include="Day24\TextFile1.txt" />
     <Content Include="Day25\TextFile1.txt" />
+    <Content Include="Day25\The_Halting_Problem_25.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />
